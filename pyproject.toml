@@ -1,0 +1,28 @@
+[project]
+name = "davide-test"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "google-genai>=0.8.5",
+    "ollama>=0.5.3",
+    "python-dotenv>=1.1.1",
+    "requests>=2.32.5",
+    "typer>=0.17.3",
+]
+
+[dependency-groups]
+dev = [
+    "mypy>=1.17.1",
+    "ty>=0.0.1a19",
+    "types-requests>=2.32.4.20250809",
+    "pytest>=8.4.1",
+    "pytest-mock>=3.14.1",
+    "responses>=0.25.8",
+]
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "."
+]
